@@ -13,29 +13,32 @@ grep '.*' /etc/passwd | cut -d: -f1 | sort
 
 ## Задача 2
 
-Вывести данные /etc/protocols в отформатированном и отсортированном порядке для 5 наибольших портов, как показано в примере ниже:
+awk '{print $2, $1}' /etc/protocols | sort -nr | head -n 5
 
-```
-[root@localhost etc]# cat /etc/protocols ...
-142 rohc
-141 wesp
-140 shim6
-139 hip
-138 manet
-```
+<img width="669" alt="Снимок экрана 2024-10-02 в 14 41 15" src="https://github.com/user-attachments/assets/a7d627de-5d47-45d7-a593-6074e96ba9ee">
+
 
 ## Задача 3
 
-Написать программу banner средствами bash для вывода текстов, как в следующем примере (размер баннера должен меняться!):
+#!/bin/bash
 
-```
-[root@localhost ~]# ./banner "Hello from RTU MIREA!"
-+-----------------------+
-| Hello from RTU MIREA! |
-+-----------------------+
-```
+text=$*
+length=${#text}
 
-Перед отправкой решения проверьте его в ShellCheck на предупреждения.
+for i in $(seq 1 $((length + 2))); do
+    line+="-"
+done
+
+echo "+${line}+"
+echo "| ${text} |"
+echo "+${line}+"
+
+<img width="707" alt="Снимок экрана 2024-10-02 в 14 51 53" src="https://github.com/user-attachments/assets/ce80af5a-f99e-410c-bf1a-f698a9f228a6">
+
+<img width="716" alt="Снимок экрана 2024-10-02 в 15 01 56" src="https://github.com/user-attachments/assets/7441383e-0cb9-4887-aadd-a49d5cd2c7f6">
+
+<img width="394" alt="Снимок экрана 2024-10-02 в 14 53 34" src="https://github.com/user-attachments/assets/17b73234-8ccd-4fa3-bf41-335b3780d40f">
+
 
 ## Задача 4
 
