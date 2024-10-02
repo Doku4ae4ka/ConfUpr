@@ -42,69 +42,12 @@ echo "+${line}+"
 
 ## Задача 4
 
-Написать программу для вывода всех идентификаторов (по правилам C/C++ или Java) в файле (без повторений).
-
-Пример для hello.c:
-
-```
-h hello include int main n printf return stdio void world
-```
+<img width="766" alt="Снимок экрана 2024-10-02 в 15 04 18" src="https://github.com/user-attachments/assets/be960278-a408-453d-ac64-a20ffd33f380">
 
 ## Задача 5
 
-Написать программу для регистрации пользовательской команды (правильные права доступа и копирование в /usr/local/bin).
+<img width="546" alt="Снимок экрана 2024-10-02 в 15 07 42" src="https://github.com/user-attachments/assets/0547f974-7dbb-4fb5-ad97-ccbf3169ce9e">
 
-Например, пусть программа называется reg:
+<img width="308" alt="Снимок экрана 2024-10-02 в 15 07 48" src="https://github.com/user-attachments/assets/b70bc71d-831c-4c76-80e7-b6413054e500">
 
-```
-./reg banner
-```
 
-В результате для banner задаются правильные права доступа и сам banner копируется в /usr/local/bin.
-
-## Задача 6
-
-Написать программу для проверки наличия комментария в первой строке файлов с расширением c, js и py.
-
-## Задача 7
-
-Написать программу для нахождения файлов-дубликатов (имеющих 1 или более копий содержимого) по заданному пути (и подкаталогам).
-
-## Задача 8
-
-Написать программу, которая находит все файлы в данном каталоге с расширением, указанным в качестве аргумента и архивирует все эти файлы в архив tar.
-
-## Задача 9
-
-Написать программу, которая заменяет в файле последовательности из 4 пробелов на символ табуляции. Входной и выходной файлы задаются аргументами.
-
-## Задача 10
-
-Написать программу, которая выводит названия всех пустых текстовых файлов в указанной директории. Директория передается в программу параметром. 
-
-## Полезные ссылки
-
-Линукс в браузере: https://bellard.org/jslinux/
-
-ShellCheck: https://www.shellcheck.net/
-
-Разработка CLI-приложений
-
-Общие сведения
-
-https://ru.wikipedia.org/wiki/Интерфейс_командной_строки
-https://nullprogram.com/blog/2020/08/01/
-https://habr.com/ru/post/150950/
-
-Стандарты
-
-https://www.gnu.org/prep/standards/standards.html#Command_002dLine-Interfaces
-https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html
-https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html
-
-Реализация разбора опций
-
-Питон
-
-https://docs.python.org/3/library/argparse.html#module-argparse
-https://click.palletsprojects.com/en/7.x/
